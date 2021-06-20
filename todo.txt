@@ -1,0 +1,77 @@
+- EditorRow
+- EditorColumn
+- ErrorBoundaries
+
+
+- CTA on jumbrotron
+- Set height (or full height) on Jumbotron
+- Center or left align jumbotron
+
+- Add overlays without breaking slots (impossible?)
+
+- Give components custom names in editor
+- Resize items
+- Fix undo
+
+- ConversionOptimiser item
+    - Create multiple versions of content
+    - Have a dropdown to select, add and remove versions
+    - Changing selection will allow user to edit content independently in versions
+    - Show random version for now
+
+Default theme:
+    - navbars:
+        - site name & logo (in theme settings)
+
+Content editor:
+    - Todo:
+        - Finish default theme, use it to make my website
+        - move into separate package
+        - Items should have categories
+        - Copy/paste
+        - Drag & drop in flex (or inline-block) components
+        - Valid (or invalid) items in slots (i.e., card top slot should only take image)
+
+    - Maybe implement:
+        - view editor at different breakpoint sizes (maybe set them somewhere)
+            and set each column size for each (i.e. xs, sm, md, lg)
+        - full screen editor
+
+
+Page editor:
+    - Todo:
+        - cmd+s or ctrl+s for save
+        - Prefab editor, save to db etc
+            - What if theme changes? Guess that applies to pages too though
+            - Maybe warn before changing themes
+        - Images (just do something basic for now?)
+        - Split backend into multiple providers
+        - Preview with different theme versions
+        - Maybe replace themeManager with context
+        - Variable editor?
+
+
+Other:
+    - Todo:
+        - Leave without saving?
+        - 404 pages in themes
+
+
+
+
+
+Remove HOST=http://localhost from .env in services
+
+Pages should also have title property, and maybe some metas or something
+
+Rename aerocms to eco or aero or something
+client-core and server-core should just be client and server. Plugins can do the rest
+Add versions to dependencies when creating clients/services
+
+Add serviceWorkers etc to make into PWA. Check fireship video for more info. Also workbox
+
+Default index.html should remove body-padding and change title to 'Aero App' or something
+
+CLI should warn of any incomplete .env files
+
+add mongoSanitize
