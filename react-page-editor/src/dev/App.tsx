@@ -14,7 +14,7 @@ const App = () => {
             {
                 preview
                     ? <ContentPage content={content} />
-                    : <ContentEditor content={content} onChange={setContent} />
+                    : <ContentEditor content={content} onChange={c => { console.log(JSON.stringify(c)); setContent(c); }} />
             }
         </div>
     );
