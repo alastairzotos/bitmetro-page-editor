@@ -1,6 +1,6 @@
 {
   "name": "@bitmetro/content-renderer",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -c tslint.json './**/*.ts{x,}'",

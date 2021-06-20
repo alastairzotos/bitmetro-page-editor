@@ -1,13 +1,14 @@
 import { ItemEditorSettings } from '@bitmetro/content-renderer';
+import { RichTextProps } from '@bitmetro/content-renderer/dist/defaultTheme/items/RichText/RichText';
 import { makeStyles } from '@material-ui/core';
 import { ContentState, convertToRaw, EditorState } from 'draft-js';
+import draftToHtml from 'draftjs-to-html';
+import htmlToDraft from 'html-to-draftjs';
 import * as React from 'react';
 import { Editor } from 'react-draft-wysiwyg';
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
-import draftToHtml from 'draftjs-to-html';
-import htmlToDraft from 'html-to-draftjs';
 
-import { RichTextProps } from './RichText';
+// import { RichTextProps } from './RichText';
 
 const useStyles = makeStyles(theme => ({
     root: {
