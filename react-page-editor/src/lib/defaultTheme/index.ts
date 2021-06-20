@@ -8,6 +8,7 @@ import {
 
 import {
     columnItem,
+    richTextItem,
     rowItem
 } from './items';
 
@@ -16,7 +17,8 @@ export const defaultTheme = extendDefaultThemeCore({
     items: [
         ...defaultThemeCore.items,
         rowItem,
-        columnItem
+        columnItem,
+        richTextItem
     ]
 });
 

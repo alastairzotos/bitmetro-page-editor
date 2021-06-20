@@ -1,6 +1,5 @@
+import { DefaultItemProps } from '@bitmetro/content-renderer';
 import * as React from 'react';
-
-import { DefaultItemProps } from '../../../theme';
 
 export interface RichTextProps extends DefaultItemProps {
     content: string;

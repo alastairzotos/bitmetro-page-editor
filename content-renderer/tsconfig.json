@@ -8,6 +8,7 @@
 	],
 	"compilerOptions": {
 		"moduleResolution": "node",
+		"lib": ["ESNext", "DOM"],
 		"target": "es5",
 		"sourceMap": true,
 		"jsx": "react",
